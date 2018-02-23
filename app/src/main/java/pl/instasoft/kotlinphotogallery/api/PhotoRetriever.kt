@@ -12,7 +12,7 @@ class PhotoRetriever {
     private val service: PhotoApi
 
     init {
-        val retrofit = Retrofit.Builder().baseUrl("https://pixabay.com/api")
+        val retrofit = Retrofit.Builder().baseUrl("http://pixabay.com/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
